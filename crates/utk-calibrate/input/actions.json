@@ -1,0 +1,22 @@
+{
+  "default_bindings": [
+    { "controller_type": "oculus_touch", "binding_url": "bindings_oculus_touch.json" }
+  ],
+  "actions": [
+    { "name": "/actions/utk/in/start", "type": "boolean" },
+    { "name": "/actions/utk/in/quit", "type": "boolean" },
+    { "name": "/actions/utk/in/show", "type": "boolean" }
+  ],
+  "action_sets": [
+    { "name": "/actions/utk", "usage": "single" }
+  ],
+  "localization": [
+    {
+      "language_tag": "en_US",
+      "/actions/utk": "UTK calibration",
+      "/actions/utk/in/start": "Start calibration",
+      "/actions/utk/in/quit": "Quit",
+      "/actions/utk/in/show": "Show current calibration"
+    }
+  ]
+}

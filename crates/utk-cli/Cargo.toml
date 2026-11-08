@@ -1,0 +1,19 @@
+[package]
+name = "utk-cli"
+description = "Show the utk driver status and record SteamVR device poses"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[[bin]]
+name = "utk"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+nix = { version = "0.31", features = ["signal", "time"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+ovr_overlay = { git = "https://github.com/galister/ovr_overlay_oyasumi", rev = "3b7d24cee24aa2b1ad7dffc5d5c8568508049bdd", default-features = false, features = ["ovr_system"] }

@@ -1,0 +1,14 @@
+{
+  "controller_type": "oculus_touch",
+  "description": "A: start, B: quit, Y: show current calibration",
+  "name": "UTK calibration",
+  "bindings": {
+    "/actions/utk": {
+      "sources": [
+        { "path": "/user/hand/right/input/a", "mode": "button", "inputs": { "click": { "output": "/actions/utk/in/start" } } },
+        { "path": "/user/hand/right/input/b", "mode": "button", "inputs": { "click": { "output": "/actions/utk/in/quit" } } },
+        { "path": "/user/hand/left/input/y", "mode": "button", "inputs": { "click": { "output": "/actions/utk/in/show" } } }
+      ]
+    }
+  }
+}

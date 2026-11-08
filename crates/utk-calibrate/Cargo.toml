@@ -1,0 +1,24 @@
+[package]
+name = "utk-calibrate"
+description = "In-VR calibration for VIVE Ultimate Trackers: hold a controller and a tracker together and draw figure eights"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[[bin]]
+name = "utk-calibrate"
+path = "src/main.rs"
+
+[dependencies]
+utk-calib.workspace = true
+anyhow = "1"
+# egui 0.37 no longer enables its built-in fonts by default; without them every glyph is a box.
+egui = { version = "0.37", features = ["default_fonts"] }
+egui_glow = "0.37"
+khronos-egl = { version = "6", features = ["static"] }
+nix = { version = "0.31", features = ["time"] }
+png = "0.18"
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1", features = ["preserve_order"] }
+ovr_overlay = { git = "https://github.com/galister/ovr_overlay_oyasumi", rev = "3b7d24cee24aa2b1ad7dffc5d5c8568508049bdd", default-features = false, features = ["ovr_applications", "ovr_input", "ovr_system"] }
