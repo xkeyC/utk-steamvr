@@ -1,4 +1,4 @@
-# UTK for Linux SteamVR
+# VIVE Ultimate Tracker for Linux SteamVR
 
 [中文](README.zh-CN.md)
 
