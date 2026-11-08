@@ -2,6 +2,10 @@
 
 [English](README.md)
 
+![在 SteamVR 菜单里校准：手柄和追踪器一起画 8 字](docs/calibration.webp)
+
+*在 SteamVR 菜单里校准（Quest 3，Steam Link 串流）：手柄和追踪器握在一起画 8 字即可。*
+
 让 VIVE Ultimate Tracker（UTK）在 Linux 的 SteamVR 里作为追踪器使用，头显是 Quest 3 这类不带 Lighthouse 的一体机（通过 Steam Link 串流）。
 
 Windows 上 HTC 的方案是 VIVE Hub + SteamVR 驱动 + 「VIVE Space Calibrator」。Linux 上 HTC 发布了 VIVE Hub for Linux（配对、建图）和 VIVE Ultimate Tracker Linux SDK，但没有 SteamVR 驱动和校准。本项目补上这两部分：

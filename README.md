@@ -2,6 +2,11 @@
 
 [中文](README.zh-CN.md)
 
+![Calibrating in the SteamVR menu: a controller and a tracker drawing figure eights](docs/calibration.webp)
+
+*Calibration in the SteamVR menu (Quest 3 over Steam Link): hold a controller and a tracker
+together, draw figure eights, done.*
+
 Use VIVE Ultimate Trackers (UTK) as SteamVR trackers on Linux, with headsets that have no
 Lighthouse tracking of their own, such as a Quest 3 streaming over Steam Link.
 
